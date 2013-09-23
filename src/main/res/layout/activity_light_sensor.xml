@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <ProgressBar
+        android:id="@+id/lightmeter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="0"
+        />
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/reading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_light_max"
+        android:id="@+id/reset_light_max"
+        android:layout_gravity="center" />
+</LinearLayout>

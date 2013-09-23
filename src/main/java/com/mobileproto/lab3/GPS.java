@@ -67,7 +67,7 @@ public class GPS extends Service implements LocationListener{
                         location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
                         if(location != null){
                             latitude = location.getLatitude();
-                            longitude = location.getLatitude();
+                            longitude = location.getLongitude();
                         }
                     }
                 }
@@ -89,6 +89,10 @@ public class GPS extends Service implements LocationListener{
                         }
                     }
                 }
+                else {
+                    showSettingsAlert();
+                }
+
             }
         } catch (Exception e){
             e.printStackTrace();

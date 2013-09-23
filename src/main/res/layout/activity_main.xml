@@ -22,7 +22,8 @@
         android:text="@string/open_camera"
         android:id="@+id/to_camera"
         android:layout_alignTop="@+id/to_flashlight"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/to_flashlight" />
 
     <Button
         android:layout_width="wrap_content"
@@ -31,4 +32,21 @@
         android:id="@+id/to_gps"
         android:layout_alignTop="@+id/to_camera"
         android:layout_toRightOf="@+id/to_camera" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_nfc"
+        android:id="@+id/to_nfc"
+        android:layout_below="@+id/to_gps"
+        android:layout_alignLeft="@+id/to_gps" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_light_sensor"
+        android:id="@+id/to_light_sensor"
+        android:layout_alignTop="@+id/to_nfc"
+        android:layout_alignLeft="@+id/to_flashlight"
+        android:layout_toLeftOf="@+id/to_nfc" />
 </RelativeLayout>

@@ -17,6 +17,8 @@ public class MainActivity extends Activity {
         Button toFlashlight = (Button) findViewById(R.id.to_flashlight);
         Button toCamera = (Button) findViewById(R.id.to_camera);
         Button toGPS = (Button) findViewById(R.id.to_gps);
+        Button toNFC = (Button) findViewById(R.id.to_nfc);
+        Button toLightSensor = (Button) findViewById(R.id.to_light_sensor);
 
         toFlashlight.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,21 @@ public class MainActivity extends Activity {
             }
         });
 
+        toNFC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToNFC(view);
+            }
+        });
+
+        toLightSensor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToLightSensor(view);
+            }
+        });
+
+
 
     }
 
@@ -55,6 +72,16 @@ public class MainActivity extends Activity {
 
     public void goToGPS(View view){
         Intent i = new Intent(this, GPSActivity.class);
+        startActivity(i);
+    }
+
+    public void goToNFC(View view){
+        Intent i = new Intent(this, NFCActivity.class);
+        startActivity(i);
+    }
+
+    public void goToLightSensor(View view){
+        Intent i = new Intent(this, LightSensorActivity.class);
         startActivity(i);
     }
 

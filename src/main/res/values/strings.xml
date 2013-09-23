@@ -11,6 +11,15 @@
     <string name="new_pic_desc">Latest Picture</string>
     <string name="refresh_location">Show Coordinates</string>
     <string name="open_gps">GPS</string>
-
+    <string name="write_nfc">Write NFC Tag</string>
+    <string name="read_nfc">Read NFC Tag</string>
+    <string name="nfc_read_instructions">Please Tap NFC tag to read</string>
+    <string name="write_aar_button">write aar To Tag</string>
+    <string name="write_text_button">Write Text to Tag</string>
+    <string name="write_url_button">Write URL to Tag</string>
+    <string name="nfc_text">Tap NFC Tag To Read</string>
+    <string name="open_nfc">NFC</string>
+    <string name="open_light_sensor">Light Sensor</string>
+    <string name="reset_light_max">Reset Max</string>
 
 </resources>

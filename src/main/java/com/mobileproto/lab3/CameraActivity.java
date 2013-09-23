@@ -37,7 +37,7 @@ public class CameraActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent("android.media.action.IMAGE_CAPTURE");
-                File f = new File(Environment.getExternalStorageDirectory(), System.currentTimeMillis()/1000L + ".jpg");
+                File f = new File(Environment.getExternalStorageDirectory(),  "logcat.jpg");
                 i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(f));
                 mUri = Uri.fromFile(f);
                 startActivityForResult(i, TAKE_PICTURE);
